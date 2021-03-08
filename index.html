@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coding Quiz App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+<div class="start_btn">
+    <button class="start">Start</button>
+</div>
+
+<div class="info_box">
+    <div class="info-title"><span>Remember One Rule</span></div>
+    <div class="info-list">
+        <div class="info">You will have only <span>10 seconds</span> per each question.</div>
+    </div>
+    <div class="buttons">
+        <button class="quit">Exit Quiz</button>
+        <button class="restart">Continue</button>
+    </div>
+</div>
+
+<!-- Quiz Box -->
+<div class="quiz_box">
+    <header>
+        <div class="title">Coding Pop Quiz</div>
+        <div class="timer">
+            <div class="time_left_txt">Time Left</div>
+            <div class="timer_sec">10</div>
+        </div>
+        <div class="time_line"></div>
+    </header>
+    <section>
+        <div class="que_text">
+        </div>
+        <div class="option_list">
+        </div>
+    </section>
+
+    <footer>
+        <div class="total_que">
+        </div>
+        <button class="next_btn">Next Question</button>
+    </footer>
+</div>
+
+<div class="result_box">
+    <div class="icon">
+        <i class="fas fa-crown"></i>
+    </div>
+    <div class="complete_text">You've completed the Quiz!</div>
+    <div class="score_text"></div>
+    <form id="form">
+        <ul>
+            <li>
+                <label for="name">Enter Your Initials</label>
+                <input type="text" id="initials" name="your_initials"
+            </li>
+            <li>
+                <button id="submit">Submit</button>
+            </li>
+        </ul>
+
+    </form>
+    <div class="buttons">
+        <button class="restart">Replay Quiz</button>
+        <button class="quit">Quit Quiz</button>
+    </div>
+</div>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
